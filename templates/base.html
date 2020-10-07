@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Nexus</title> 
+ </head>
+ <body>
+<form class="form-horizontal col-xs-12 col-lg-12 col-md-12 col-sm-12" method="POST" action="{{url_for('update_memorecordsdb')}}" name="wform">
+<div class= "container">
+  <br>
+<input type="text" class="form-control" id="com_name" placeholder="DealerMemo" name="com_name">
+  
+<h3>Sectional Doors Americas</h3>
+<input style="margin-left: 6%; "type="date" class="form-control" id="date" placeholder="October 4,2020" name="date">
+</div>
+     <br>
+    <label>To </label>
+    <input  style="margin-left: 4.5%;"type="text" class="form-control" id="to" placeholder="" name="to">
+    <br>
+    <br>
+    <label>From:</label>
+    <input style="margin-left: 3%;" type="text" class="form-control" id="f_rom" placeholder="" name="f_rom" required>
+    <br>
+    <br>
+    <label>Subject:</label>
+    <input style="margin-left: 2%;"type="text" class="form-control" id="subject" placeholder="" name="subject" required>
+    <br>
+
+    <hr>
+  
+     <div class="form-group">
+            <label></label>
+            <textarea style="min-width: 60%;margin-left: 5%;margin-right: 5%;" class="form-control" id="text_body" rows="30" cols="60" name="text_body"></textarea>
+            
+      </div>
+      <br>
+      <div style="margin-left: 6%";>
+       
+       <ul>
+         <li><input type="text" name="list_data"></li>
+       </ul>
+     </div>
+      <br><br>
+      <div style="margin-top: .3%;"class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Joe" name="name" value="">
+      <br>
+      <input style="margin-top: .3%;" type="email" class="form-control" id="email" placeholder="name@example.com" name="email" value="">
+      </div>
+    </div>
+<br><br>
+  </div>
+   <input style="margin-left: 10%; "type="submit" name="submit" value="Save">
+  </form>
+</body>
+</html>
